@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="js/axios.min.js"></script>
+    <script>
+        // var xhr=new XMLHttpRequest();
+        // xhr.onreadystatechange=function(){
+        //     if(xhr.readyState==4&&xhr.statusText==200){
+        //         var list=xhr.responseText
+        //         console.log(list)
+        //     }
+        // }
+        // xhr.open("get","/user/list",true);
+        // xhr.send()
+        // axios.
+        axios.get(
+           "http:/127.0.0.1:5050/user/list" ,
+           {
+            params:{
+                lid:5
+            }   
+           }
+        ).then(function(result){
+            console.log(result)
+        })
+
+    </script>
+</head>
+<body>
+<div>
+    1h655
+</div>
+</body>
+</html>
